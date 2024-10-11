@@ -1,5 +1,5 @@
 resource "null_resource" "test" {
-  count = 5
+  count = 10
   triggers = {
     always_run = "${timestamp()}"
   }
