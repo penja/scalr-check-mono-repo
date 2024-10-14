@@ -4,3 +4,15 @@ resource "null_resource" "test" {
     always_run = "${timestamp()}"
   }
 }
+
+
+terraform {
+  required_providers {
+    scalr = {
+      source = "Scalr/scalr"
+      version = "2.1.1"
+    }
+  }
+}
+
+provider "scalr" {}
